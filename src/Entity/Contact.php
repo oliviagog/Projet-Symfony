@@ -1,10 +1,6 @@
 <?php
 
 namespace App\Entity;
-
-use App\Repository\PollRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -44,7 +40,7 @@ class Contact
         return $this->nom;
     }
 
-    public function setNom(?string $nom): Contact
+    public function setNom(?string $nom): self
     {
         return $this->nom = $nom;
         return $this;
@@ -55,7 +51,7 @@ class Contact
         return $this->prenom;
     }
 
-    public function setPrenom(?string $prenom): Contact
+    public function setPrenom(?string $prenom): self
     {
         return $this->prenom = $prenom;
         return $this;
@@ -66,7 +62,7 @@ class Contact
         return $this->email;
     }
 
-    public function setEmail(?string $email): Contact
+    public function setEmail(?string $email): self
     {
         return $this->email = $email;
         return $this;
@@ -77,7 +73,7 @@ class Contact
         return $this->message;
     }
 
-    public function setMessage(?string $message): Contact
+    public function setMessage(?string $message): self
     {
         return $this->message = $message;
         return $this;

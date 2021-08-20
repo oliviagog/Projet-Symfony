@@ -4,6 +4,8 @@ namespace App\DataFixtures;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
 use Faker;
+use App\Entity\Departement;
+
 class ContactFixture extends ContactFixture
 {
     public function load(ObjectManager $manager)
